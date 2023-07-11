@@ -11,7 +11,7 @@ variable "cidr_block_subnet_1" {
 
 variable "cidr_block_subnet_2" {
     type = string
-    default = "10.120.97.0/24"
+    default = "10.120.99.0/24"
 }
 
 variable "availability_zone_1" {
