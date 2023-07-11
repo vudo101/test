@@ -39,9 +39,9 @@ jobs:
       - name: Terraform plan
         run: |
            terraform plan
-        working-directory: ../
+        working-directory: ../../
         
-      - name: Terraform apply
-        run: |
-            terraform apply
-        working-directory: ../
+#      - name: Terraform apply
+#        run: |
+#            terraform apply
+#        working-directory: ../../
