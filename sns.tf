@@ -3,7 +3,7 @@ resource "aws_sns_topic" "system-alert" {
 }
 
 resource "aws_sns_topic_subscription" "email-target" {
-  for_each  = toset(["abc@gmail.com"])
+  for_each  = toset(["vudo@gft.com"])
   topic_arn = aws_sns_topic.system-alert.arn
   protocol  = "email"
   endpoint  = each.value
