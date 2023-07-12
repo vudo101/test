@@ -1,4 +1,4 @@
-name: EC2 provisioning
+name: SNS provisioning
 
 # Controls when the workflow will run
 on:
@@ -41,7 +41,7 @@ jobs:
            terraform plan
  #         working-directory: ../../
         
-      - name: Terraform destroy
+      - name: Terraform apply
         run: |
-            terraform destroy --auto-approve -lock=false
+            terraform apply --auto-approve -lock=false
 #        working-directory: ../../
