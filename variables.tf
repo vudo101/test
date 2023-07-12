@@ -81,7 +81,7 @@ variable "auto_scaling_group_name" {
 variable "subnet_ids" {
     description = "Subnet ids on private subnets"
     type        = list(string)
-    default     = ["subnet-02a1207ec4256f2e9", "subnet-03c156f8911bde850"]
+    default     = ["subnet-075f96b378538fb90", "subnet-04edf94b6e921d4eb"]
 }
 
 variable "tag_autoscaling_group_key" {
@@ -118,7 +118,7 @@ variable "nlb_name" {
 
 variable "subnets" {
     type    = list(string)
-    default = ["subnet-02a1207ec4256f2e9", "subnet-03c156f8911bde850"]
+    default = ["subnet-075f96b378538fb90", "subnet-04edf94b6e921d4eb"]
 }
 
 variable "tag_alb" {
