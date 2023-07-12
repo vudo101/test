@@ -16,12 +16,12 @@ variable "cidr_block_subnet_2" {
 
 variable "availability_zone_1" {
     type = string
-    default = "ap-southeast-2a"
+    default = "ap-southeast-1a"
 }
 
 variable "availability_zone_2" {
     type = string
-    default = "ap-southeast-2c"
+    default = "ap-southeast-1c"
 }
 
 variable "tag_vpc" {
