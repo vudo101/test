@@ -16,12 +16,12 @@ variable "cidr_block_subnet_2" {
 
 variable "availability_zone_1" {
     type = string
-    default = "ap-southeast-2a"
+    default = "ap-southeast-1a"
 }
 
 variable "availability_zone_2" {
     type = string
-    default = "ap-southeast-2c"
+    default = "ap-southeast-1c"
 }
 
 variable "tag_vpc" {
@@ -81,7 +81,7 @@ variable "auto_scaling_group_name" {
 variable "subnet_ids" {
     description = "Subnet ids on private subnets"
     type        = list(string)
-    default     = ["subnet-085b1573dc5460602", "subnet-0dda088b97b665f45"]
+    default     = ["subnet-08e34f4d0c1f80d57", "subnet-0f8270227f3e122af"]
 }
 
 variable "tag_autoscaling_group_key" {
@@ -118,7 +118,7 @@ variable "nlb_name" {
 
 variable "subnets" {
     type    = list(string)
-    default = ["subnet-085b1573dc5460602", "subnet-0dda088b97b665f45"]
+    default = ["subnet-08e34f4d0c1f80d57", "subnet-0f8270227f3e122af"]
 }
 
 variable "tag_alb" {
