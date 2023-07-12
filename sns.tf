@@ -1,5 +1,5 @@
 resource "aws_sns_topic" "system-alert" {
-  name = "syslog-alert"
+  name = "log-alert"
 }
 
 resource "aws_sns_topic_subscription" "email-target" {
