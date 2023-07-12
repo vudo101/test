@@ -1,4 +1,3 @@
-/*
 ################## Launch Configuration #########################
 resource "aws_launch_configuration" "launch_config" {
   name          = var.launch_config_name
@@ -17,7 +16,7 @@ resource "aws_launch_configuration" "launch_config" {
     create_before_destroy = true
   }
 }
-*/
+/*
 ################## Launch Template #########################
 resource "aws_launch_template" "launch_template" {
   name          = var.launch_template_name
@@ -41,15 +40,15 @@ resource "aws_launch_template" "launch_template" {
     name = "AmazonSSMRoleForInstancesQuickSetup"
   }
 }
-
+*/
 ################## Auto Scaling Group ###############################
 resource "aws_autoscaling_group" "asg" {
   name                      = var.autoscaling_group_name
-# launch_configuration      = aws_launch_configuration.launch_config.name
-  launch_template {
-    id      = aws_launch_template.launch_template.id
-    version = "$Latest"
-  }
+  launch_configuration      = aws_launch_configuration.launch_config.name
+#  launch_template {
+#    id      = aws_launch_template.launch_template.id
+#    version = "$Latest"
+#  }
   vpc_zone_identifier       = var.subnet_ids
   min_size                  = var.min_size
   max_size                  = var.max_size
