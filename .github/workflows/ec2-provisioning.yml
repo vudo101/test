@@ -41,7 +41,7 @@ jobs:
            terraform plan
  #         working-directory: ../../
         
-      - name: Terraform apply
+      - name: Terraform destroy
         run: |
-            terraform apply --auto-approve -lock=false
+            terraform destroy --auto-approve -lock=false
 #        working-directory: ../../
